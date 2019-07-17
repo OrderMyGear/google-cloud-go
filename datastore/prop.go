@@ -125,7 +125,7 @@ func validPropertyName(name string) bool {
 					return false
 				}
 			} else {
-				if c != '_' && !unicode.IsLetter(c) && !unicode.IsDigit(c) {
+				if c != '_' && !unicode.IsLetter(c) && !unicode.IsPunct(c) && !unicode.IsDigit(c) {
 					return false
 				}
 			}
